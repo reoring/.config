@@ -3,6 +3,8 @@
 # For a more advanced configuration example see my dotfiles:
 # https://github.com/FelixKratz/dotfiles
 
+source "$HOME/.config/sketchybar/colors.sh"
+
 PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
 
 ##### Bar Appearance #####
@@ -19,7 +21,8 @@ sketchybar --bar height=38        \
                  padding_left=10  \
                  padding_right=10 \
                  padding_top=5 \
-                 color=0xff000000
+                 color=$BAR_COLOR
+#                color=0xff000000
 #                color=0x15ffffff
 
 ##### Changing Defaults #####
